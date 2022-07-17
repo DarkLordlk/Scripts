@@ -1,0 +1,13 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $.ajax({
+    url: 'https://static.doubleclick.net/instream/ad_status.js',
+    success: function( data ) {
+      console.log("Ads Successfully Loaded");
+    },
+    error: function( data ) {
+      console.log("You Are Using An Adblocker!.");
+      document.body.innerHTML = '<center><br><h1>Turn Off That Fu**ing Adblocker If You Want To Access Full Features!</h1></center>';
+    }
+  });
+</script>
